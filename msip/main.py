@@ -155,12 +155,3 @@ t.test(scores1rd,scores2rd,scores3rd,scores4rd,scores5rd,n_splits)
 print("Test dla precision score")
 t.test(scores1vm,scores2vm,scores3vm,scores4vm,scores5vm,n_splits)
 
-#https://deslib.readthedocs.io/en/latest/auto_examples/plot_using_instance_hardness.html#sphx-glr-auto-examples-plot-using-instance-hardness-py
-#https://www.researchgate.net/publication/339672014_Data_Preprocessing_for_des-knn_and_Its_Application_to_Imbalanced_Medical_Data_Classification
-#https://github.com/scikit-learn-contrib/DESlib
-#https://github.com/makonwencjusz/praca_magisterska/blob/master/runnn.py
-#https://machinelearningmastery.com/dynamic-ensemble-selection-in-python/
-#https://deslib.readthedocs.io/en/latest/user_guide/tutorial.html
-#https://deslib.readthedocs.io/en/latest/auto_examples/example_heterogeneous.html
-#https://scikit-learn.org/stable/modules/model_evaluation.html
-#https://books.google.pl/books?id=IUkrEAAAQBAJ&pg=PA107&lpg=PA107&dq=KNORAU+pool+classifier&source=bl&ots=t-4bbfDeqs&sig=ACfU3U3f1r5_mZNILaEb6zQFDIBwyyZh-g&hl=pl&sa=X&ved=2ahUKEwj50pDqo5zxAhVimIsKHUK9BU0Q6AEwBXoECAoQAw#v=onepage&q=KNORAU%20pool%20classifier&f=false
