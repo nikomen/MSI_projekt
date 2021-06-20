@@ -17,7 +17,7 @@ from KNORAU_Nasza import KNORA_U_nasz
 #X, y = make_classification(n_samples=1000, n_features=20, n_informative=2, n_redundant=5, random_state=7)
 
 #Można wczytać dane z pliku
-dataset = 'german'
+dataset = 'australian'
 dataset = np.genfromtxt("%s.csv" % (dataset), delimiter=",")
 X = dataset[:, :-1]
 y = dataset[:, -1].astype(int)

@@ -37,18 +37,18 @@ class KNORA_U_nasz(BaseEstimator, ClassifierMixin):
     # Sprawdzamy czy klasyfikator dokonał poprawnej predykcji, jeżeli tak to dadajemy go tablicy.
     # Każdy kasyfikator będzie w tablcy tyle razy ile poprawnie dokonał predykcji.
     # Jeżeli żaden nie dokonał poprawnie predykcji to wszystkie klasyfikatory będą w tablicy jeden raz.
-    def selection(self, ensemble, reg_com):
+    def selection(self, tab_good_classifier, reg_com):
         for clf in self.pool_classifiers:
             for i in reg_com:
                 pred = clf.predict(i[0][0].reshape(1, -1))
                 if pred == i[1]:
-                    ensemble.append(clf)
-        if(len(ensemble) != 0):
-         return ensemble
+                    tab_good_classifier.append(clf)
+        if(len(tab_good_classifier) != 0):
+         return tab_good_classifier
         else:
          for clf in self.pool_classifiers:
-            ensemble.append(clf)
-         return ensemble
+            tab_good_classifier.append(clf)
+         return tab_good_classifier
 
     def predict(self, X_test):
         check_is_fitted(self)
